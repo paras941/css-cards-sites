@@ -7,7 +7,8 @@
 }
 
 body{
-    background: linear-gradient(150deg, rgb(96, 183, 212), rgb(237, 156, 156));
+    background: linear-gradient(150deg, rgb(31, 145, 183), rgb(120, 24, 24));
+    /* background: linear-gradient(150deg, rgb(96, 183, 212), rgb(237, 156, 156)); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,15 +40,21 @@ body{
     font-size: 25px;
     font-weight: 700;
     font-family: poppins,sans-serif;
+    text-shadow: 2px 2px 7px black;
 }
 
 .container .para{
     padding: 0 30px;
     font-size: 15px;
     color: #857878;
+    text-shadow: 1px 1px 9px black;
 }
 
 .container .amount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
     height:40px;
     width: 85%;
     background: rgb(73, 125, 142);
@@ -55,16 +62,38 @@ body{
 }
 
 .buttons{
-    background:rgb(0, 7, 11);
+    background:rgb(5, 35, 53);
     color: white;
     font-size: 16px;
     height: 50px;
     width:80%;
     border-radius: 17px;
     font-family: poppins,sans-serif;
+     box-shadow: 3px 3px 3px  black;
+}
+
+.buttons:hover{
+    background:rgb(1, 29, 48);
+    color: white;
+    font-size: 18px;
+    height: 50px;
+    width:80%;
+    border-radius: 17px;
+    box-shadow: 4px 4px 4px  black;
 }
 
 .cancel{
      font-weight: bold;
-     font-size: px;
+     font-size: 18px;
+}
+
+
+.rightside{
+    font-weight: bold;
+}
+
+
+.leftside{
+    margin-left: 14px;
+    font-weight: bold;
 }
