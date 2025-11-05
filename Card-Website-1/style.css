@@ -1,167 +1,178 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: linear-gradient(150deg, rgb(31, 145, 183), rgb(120, 24, 24));
-    /* background: linear-gradient(150deg, rgb(96, 183, 212), rgb(237, 156, 156)); */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;   
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container{
-    border: 2px solid rgb(2, 2, 23);
+.container {
     background: white;
-    height: 75vh;
-    width: 24vw;
-    border-radius: 25px;
+    max-width: 420px;
+    width: 90%;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
+    padding-bottom: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
 }
 
-.container .image1{
+.container .image1 {
     object-fit: cover;
-    height: 30%; 
-     width: 100%;
-     margin-top: -2px;
-     border-top-left-radius: 25px;
-     border-top-right-radius: 25px;
+    height: 180px; 
+    width: 100%;
 }
 
-.container .summary{
-    font-size: 25px;
-    font-weight: 700;
-    font-family: poppins,sans-serif;
-    text-shadow: 2px 2px 7px black;
+.container .summary {
+    font-size: 26px;
+    font-weight: 900;
+    color: #1f2f56;
 }
 
-.container .para{
-    padding: 0 30px;
+.container .para {
+    padding-inline: 30px;
     font-size: 15px;
     color: #857878;
-    text-shadow: 1px 1px 9px black;
+    text-align: center;
+    line-height: 1.6;
 }
 
-.container .amount{
+.container .plan-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
-    height:40px;
+    align-items: center;
+    padding: 15px 20px;
     width: 85%;
-    background: rgb(73, 125, 142);
-    border-radius: 17px;
+    background: hsl(225, 100%, 98%);
+    border-radius: 12px;
 }
 
-.buttons{
-    background:rgb(5, 35, 53);
-    color: white;
-    font-size: 16px;
-    height: 50px;
-    width:80%;
-    border-radius: 17px;
-    font-family: poppins,sans-serif;
-     box-shadow: 3px 3px 3px  black;
+.plan-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.buttons:hover{
-    background:rgb(1, 29, 48);
-    color: white;
-    font-size: 18px;
-    height: 50px;
-    width:80%;
-    border-radius: 17px;
-    box-shadow: 4px 4px 4px  black;
+.plan-details .image2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
 }
 
-.cancel{
-     font-weight: bold;
-     font-size: 18px;
-}
-
-
-.rightside{
-    font-weight: bold;
-}
-
-
-.leftside{
-    margin-left: 10px;
-    font-weight: bold;
-    display:flex;
-    flex-direction: column;
-}
-
-.leftside .image2{
-       height: 40px;
-       width: 40px;
-       position: relative;
-       top: -4px;
-       border-radius: 4px;
-    }
-
-    .leftside .amount-number{
-        position: relative;
-        bottom: 26px;
-        font-size: 15px;
-        left: 55px;
-    }
-
-   @media screen and (max-width: 1269px) {
-
-  .container {
-    width: 70vw;
-    height: auto;
-    padding-bottom: 20px;
-  }
-
-  .container .summary {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .container .para {
-    font-size: 13px;
-    padding: 0 15px;
-    text-align: center;
-  }
-
-  .container .amount {
+.plan-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: auto;
-    gap: 8px;
-  }
+    line-height: 1.4;
+}
 
-  
-    .leftside .amount-number{
-        position: relative;
-        bottom: -2px;
-        font-size: 15px;
-        left: -5px
-    } 
+.plan-text strong {
+    font-weight: 700;
+    color: #1f2f56;
+}
 
-
-  .buttons {
+.plan-text span {
+    color: #857878;
     font-size: 14px;
-    width: 90%;
-  }
+}
 
-  .cancel {
-    font-size: 16px;
-    /* background: #000; */
-  }
+.plan-change a {
+    font-weight: 700;
+    color: #3829e0;
+    font-size: 14px;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.plan-change a:hover {
+    color: #6a61e9;
+    text-decoration: none;
+}
+
+.btn {
+    width: 85%;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.btn-proceed {
+    background: #3829e0;
+    color: white;
+    border: none;
+    box-shadow: 0 10px 20px rgba(56, 41, 224, 0.25);
+}
+
+.btn-proceed:hover {
+    background: #6a61e9;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 22px rgba(56, 41, 224, 0.3);
+}
+
+.btn-cancel {
+    background: transparent;
+    color: #857878;
+    font-weight: 700;
+}
+
+.btn-cancel:hover {
+    color: #1f2f56;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        gap: 20px;
+    }
+
+    .container .summary {
+        font-size: 22px;
+    }
+
+    .container .para {
+        font-size: 14px;
+        padding-inline: 25px;
+    }
+    
+    .container .plan-box {
+        padding: 12px;
+        width: 90%;
+    }
+
+    .plan-details {
+        gap: 10px;
+    }
+    
+    .plan-text strong {
+        font-size: 14px;
+    }
+
+    .plan-text span {
+        font-size: 13px;
+    }
+
+    .plan-change a {
+        font-size: 13px;
+    }
+
+    .btn {
+        width: 90%;
+    }
 }
