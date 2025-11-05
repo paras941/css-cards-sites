@@ -3,9 +3,8 @@ A responsive and visually appealing Order Summary Card built using HTML and CSS.
 This component demonstrates clean design, modern layout structure, and smooth hover effects suitable for pricing, subscription, or checkout interfaces.
 
 🔍 Preview
+ Live Demo: [live demo here](https://css-cards-sites-gpc02n0vm-paras941s-projects.vercel.app)
 
-🎯 Live Demo: Order Summary Card on Vercel
-(Replace with your actual deployed link once live.)
 
 🧱 Tech Stack
 
