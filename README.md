@@ -27,20 +27,5 @@ order-summary-card/
 ├── style.css        # Stylesheet for layout and design
 └── README.md        # Project documentation
 
-📱 Responsive Design
 
-This project includes media queries that adapt the layout for small screens (≤480px).
-It’s fully optimized for mobile-first responsiveness.
-
-💡 Future Improvements
-
-Add JavaScript interactivity (e.g., confirmation modal or payment simulation)
-
-Use CSS variables for easy theme customization
-
-Convert to a React component for reuse across larger projects
-
-📜 License
-
-This project is open-source and available under the MIT License.
 
